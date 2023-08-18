@@ -823,8 +823,8 @@ pipeline {
    stages {
       stage('e2e-tests') {
          steps {
-            sh 'ci'
-            sh 'npx playwright test'
+            sh 'npm ci'
+            sh 'CI=true npx playwright test'
          }
       }
    }
